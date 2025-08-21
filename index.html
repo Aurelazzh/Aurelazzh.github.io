@@ -132,11 +132,10 @@
   <section id="home" class="pt-28 md:pt-36">
     <div class="max-w-7xl mx-auto grid md:grid-cols-[1.1fr_.9fr] gap-8 items-center px-5">
       <div class="fade">
-        <p class="text-[var(--muted)]">Junior Web Developer</p>
+        <p class="text-[var(--muted)]">Web Developer</p>
         <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mt-2">Halo, saya <span class="gradient-text">Aurelia Azzahra</span></h1>
         <p class="text-[var(--muted)] mt-4 max-w-2xl">
-          Berfokus pada pengembangan aplikasi web modern yang cepat, responsif, dan mudah digunakan. Berpengalaman dengan Java/Spring, .NET, dan front-end yang terstruktur dan efisien.
-        </p>
+        Mengembangkan aplikasi web modern yang cepat, responsif, dan user-friendly dengan keahlian di Java/Spring, .NET, dan front-end terstruktur.        </p>
         <div class="flex gap-3 mt-6">
           <a href="#portfolio" class="bg-[var(--accent)] hover:brightness-110 px-5 py-3 rounded-xl font-semibold">Lihat Proyek</a>
           <a href="#contact" class="bg-white/10 hover:bg-white/15 px-5 py-3 rounded-xl">Kontak</a>
@@ -157,23 +156,43 @@
           </div>
         </div>
       </div>
-      <div class="fade relative">
-        <div class="absolute -inset-4 bg-gradient-to-br from-[var(--accent)]/20 to-[var(--accent-2)]/20 blur-2xl rounded-3xl"></div>
-        <img alt="portrait" class="relative w-full rounded-3xl object-cover aspect-[4/5] ring-1 ring-white/10" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" />
+     <div class="fade relative">
+      <div class="relative">
+        <!-- Glow animasi -->
+        <div class="absolute -inset-6 rounded-3xl blur-3xl 
+                    bg-gradient-to-br from-[var(--accent)]/30 to-[var(--accent-2)]/30 
+                    animate-pulse"></div>
+
+        <!-- Foto -->
+        <img alt="portrait"
+            class="relative w-64 md:w-72 lg:w-80 xl:w-96 
+                    rounded-3xl object-contain ring-1 ring-white/10 shadow-[0_0_30px_rgba(168,85,247,0.5)]"
+            src="assets/img/FOTO.png" />
       </div>
     </div>
   </section>
 
 <!-- ABOUT -->
-<section id="about" class="py-20">
+<section id="about" class="py-32">
   <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-8 items-start">
     <div class="fade">
       <h2 class="text-3xl md:text-4xl font-extrabold">Tentang Saya</h2>
       <p class="text-[var(--muted)] mt-4">
-        Fresh Graduate D3 Manajemen Informatika dengan pengalaman mengembangkan lebih dari 6 aplikasi 
-        web & desktop menggunakan C#, Java, PHP, dan Spring Boot. Terbiasa berkolaborasi dalam tim, 
-        menulis dokumentasi rapi, dan menerapkan solusi digital untuk efisiensi bisnis.
+        Fresh Graduate dengan pengalaman mengembangkan lebih dari 6 aplikasi 
+        web & desktop menggunakan C#, Java, PHP, dan Spring Boot. 
+        Terbiasa berkolaborasi dalam tim, menulis dokumentasi rapi, 
+        dan menerapkan solusi digital untuk efisiensi bisnis.
       </p>
+      <!-- Highlight Pendidikan -->
+      <div class="mt-5 inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-xl border border-white/20 shadow-sm">
+        <i data-lucide="graduation-cap" class="w-5 h-5 text-[var(--accent)]"></i>
+        <span class="font-semibold">D3 Manajemen Informatika</span>
+        <span class="text-[var(--muted)]">– Politeknik Astra</span>
+      </div>
+      <a href="assets/file/CV_Aurelia Azzahra.pdf" download
+        class="inline-flex items-center gap-2 mt-5 bg-[var(--accent)] text-white px-5 py-2 rounded-xl shadow-md hover:bg-[var(--accent-hover)] transition">
+        <i data-lucide="download"></i> Download CV
+      </a>
       <div class="grid grid-cols-2 gap-3 mt-6 items-stretch">
         <div class="glass rounded-2xl p-4 h-full">
           <div class="text-sm text-[var(--muted)]">Utama</div>
@@ -185,50 +204,50 @@
         </div>
       </div>
     </div>
-   <div class="fade glass rounded-3xl p-6 h-full">
-    <h3 class="font-semibold mb-3">Top Skill</h3>
-    <div class="space-y-4">
-      <!-- Java -->
-      <div>
-        <div class="flex justify-between mb-1 text-sm">
-          <span>Java / Spring</span><span>85%</span>
+
+    <div class="fade glass rounded-3xl p-6 h-full">
+      <h3 class="font-semibold mb-3">Top Skill</h3>
+      <div class="space-y-4">
+        <!-- Java -->
+        <div>
+          <div class="flex justify-between mb-1 text-sm">
+            <span>Java / Spring</span><span>85%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div class="bg-[var(--accent-2)] h-2 rounded-full" style="width:85%"></div>
+          </div>
         </div>
-        <div class="w-full bg-gray-200 rounded-full h-2">
-          <div class="bg-[var(--accent-2)] h-2 rounded-full" style="width:85%"></div>
+        <!-- .NET -->
+        <div>
+          <div class="flex justify-between mb-1 text-sm">
+            <span>.NET (C#)</span><span>85%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div class="bg-[var(--accent-2)] h-2 rounded-full" style="width:85%"></div>
+          </div>
         </div>
-      </div>
-      <!-- .NET -->
-      <div>
-        <div class="flex justify-between mb-1 text-sm">
-          <span>.NET (C#)</span><span>80%</span>
+        <!-- PHP -->
+        <div>
+          <div class="flex justify-between mb-1 text-sm">
+            <span>PHP / Laravel</span><span>75%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div class="bg-[var(--accent-2)] h-2 rounded-full" style="width:75%"></div>
+          </div>
         </div>
-        <div class="w-full bg-gray-200 rounded-full h-2">
-          <div class="bg-[var(--accent-2)] h-2 rounded-full" style="width:80%"></div>
-        </div>
-      </div>
-      <!-- PHP -->
-      <div>
-        <div class="flex justify-between mb-1 text-sm">
-          <span>PHP / Laravel</span><span>70%</span>
-        </div>
-        <div class="w-full bg-gray-200 rounded-full h-2">
-          <div class="bg-[var(--accent-2)] h-2 rounded-full" style="width:75%"></div>
-        </div>
-      </div>
-      <!-- Database -->
-      <div>
-        <div class="flex justify-between mb-1 text-sm">
-          <span>MySQL / SQL Server</span><span>80%</span>
-        </div>
-        <div class="w-full bg-gray-200 rounded-full h-2">
-          <div class="bg-[var(--accent-2)] h-2 rounded-full" style="width:70%"></div>
+        <!-- Database -->
+        <div>
+          <div class="flex justify-between mb-1 text-sm">
+            <span>MySQL / SQL Server</span><span>85%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div class="bg-[var(--accent-2)] h-2 rounded-full" style="width:85%"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
-</section>
-<section id="skills" class="py-20">
+  <section id="skills" class="py-20">
   <div class="max-w-7xl mx-auto px-5">
     <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">
       My <span class="text-[var(--accent-2)]">Skills</span>
@@ -488,6 +507,9 @@
     </div>
   </div>
 </section>
+</section>
+
+
 
 <style>
   .animate-scroll {
@@ -727,7 +749,6 @@
   <div class="max-w-7xl mx-auto px-5">
     <h2 class="text-3xl md:text-4xl font-extrabold mb-6">International Certifications</h2>
     <p class="text-[var(--muted)] mb-10 max-w-2xl">
-  Sertifikasi internasional yang diakui secara global dan memperkuat kompetensi teknis serta profesional saya.
     </p>
     <div class="grid md:grid-cols-2 gap-6 items-stretch">
       
